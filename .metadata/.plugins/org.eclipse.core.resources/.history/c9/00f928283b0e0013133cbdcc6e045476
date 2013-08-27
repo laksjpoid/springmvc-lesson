@@ -1,0 +1,26 @@
+package springMVC.web;
+
+import java.lang.annotation.Annotation;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+public class HelloWorldController implements Controller{
+
+    public String helloWorld(Model model) {
+        model.addAttribute("message", "Hello World!");
+        return "helloWorld";
+    }
+
+	@Override
+	public Class<? extends Annotation> annotationType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String value() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
