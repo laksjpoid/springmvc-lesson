@@ -27,7 +27,6 @@ INDEX VERSION 1.126+D:\Workspaces\Springframework\.metadata\.plugins\org.eclipse
 2686031036.index
 499474451.index
 4138849933.index
-2320829789.index
 1236244692.index
 717202130.index
 1563955668.index
