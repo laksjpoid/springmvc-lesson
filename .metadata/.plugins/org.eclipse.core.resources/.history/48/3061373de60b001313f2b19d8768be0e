@@ -1,5 +1,0 @@
-package springMVC.web;
-
-public class HelloController {
-
-}

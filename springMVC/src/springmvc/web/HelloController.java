@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class HelloController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
@@ -15,6 +17,12 @@ public class HelloController implements Controller {
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		logger.info("Returning hello view");
-		return new ModelAndView("welcome");
+		
+		String hello = "hello, 涛涛！";
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("A", "涛");
+		map.put("B", "汗");
+		map.put("C", "大小多少");
+		return new ModelAndView("welcome", "map", map);
 	}
 }
