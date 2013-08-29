@@ -12,7 +12,7 @@
 	<!-- 注解扫描包 -->
 	<context:component-scan base-package="springmvc.web.annotation" />
 	
-	<!-- 开启注解  mvc 这个标签可以替代下面的两个bean-->
+	<!-- 开启注解 -->
 	<mvc:annotation-driven/>
 <!-- 	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"></bean> -->
 <!-- 	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"></bean> -->
